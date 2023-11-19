@@ -1,0 +1,197 @@
+----------------------------------------------------------
+Problem 01: page numbers
+----------------------------------------------------------
+Given 2 arrays of same size, A and B, each array having
+'n' postive integers. Each number in array represent 
+page number of a book. 
+A[i] is first page number of chapter i
+B[i] is last page number of chapter i
+New chapter may start on same page where previous one ended.
+(First page of chapter should be <= last page of the chapter)
+
+output 1 if given arrays does follow these rules
+       otherwise 0.
+
+-----------------------------------------------
+Problem 02: common segments in arrays 
+-----------------------------------------------
+Given 2 arrays A and B of sizes n1 and n2 respectively.
+Both the arrays have integers in non-decreasing order.
+all i,j : (0 <= i <= j < n1)  A[i]<= A[j] 
+all i,j : (0 <= i <= j < n2)  B[i]<= B[j] 
+
+Output size of longest sgement which is common in both arrays.
+
+eg
+     A =  a1 a1 a2 a3 a4 a4 a5 a6 a6 a6 a7 a8
+                         |---------|
+
+     B =  a1 a2 a4 a5 a6 a6 a7 a9
+                 |--------|
+
+output: 4 
+     becuase longest common segment is (a4 a5 a6 a6).
+
+
+------------------------------------------
+Problem 03: max occurrence 
+------------------------------------------
+
+Given an array A of size n. It contains integers
+in non decreasing order.
+all i,j: 0 <= i <= j < n, A[i] <= A[j]
+
+output : number which occurs most number of times.
+
+
+ eg input : [a1, a1, a1, a3, a3, a3, a3, a2]
+    output: a3
+
+
+---------------------------------------------------
+Problem 04: unique element in k dif array
+---------------------------------------------------
+
+An array is k dif array if 
+for all i, 0 <= i < (n-1), abs(A[i] - A[i+1])) = k
+[Note:abs(-x) = x]
+
+Given an intger k and a k-dif array A of size n.
+Ouput: Count number of unique elements of array A.
+
+
+----------------------------------------------------
+Problem 05: groups
+----------------------------------------------------
+
+
+Given an array A of size n. Array contains 
+only 0,1 and 2. 
+
+Output: 1 if there is no other element between 
+        two elements with same value
+        otherwise output will be 0.
+
+eg1   Input : 0 0 0 2 2 2 1 1 1
+      Output: 1
+
+eg2   Input : 1 1 1 0 0 2 2
+      Output: 1
+
+eg3   Input : 2 2 1 1 0 0 1 1
+      Output: 0
+      Here 1s are not grouped together. 
+------------------------------------------------------
+Problem 06: 1,2,3 check
+------------------------------------------------------
+
+Given an array A of size n. Array contains only
+3, 1, and 2
+
+Output: 1 if all 3s followed by 1s followed by 2s
+        otherwise 0;
+
+eg
+    Input : 3 3 3 1 1 2 2 2
+    Output: 1
+
+    Input : 2 2 1 1 3 3 3
+    Output: 0
+
+
+----------------------------------------------
+Problem 07: range check
+----------------------------------------------
+
+Given array A of size n.(n > 0) 
+
+Output: 1 if all elements are in between A[0] and A[n-1]
+        otherwise 0
+
+
+(Note: When we say k is in between j and h it means 
+       h <= k <= j     or     j <= k <= h)
+
+
+----------------------------------------------
+Problem 08: k-range peaks
+----------------------------------------------
+Given an array A of size n and another positive integer k.
+(n >= 3)
+
+Output: count of all i such that 1 <= i <= n-2;  
+        |A[i] - A[i+1]| < k and 0 <= (A[i]-A[i-1]) < k
+(Note: Corner elements are not considered in the count)
+
+------------------------------------------------------
+Problem 09: Exactly 2 0s
+------------------------------------------------------
+Given an array of size n. Write a program which will
+compute start index and last index of longest segment. 
+Segment(i,j) =>  (Number of 0s in [i,j]) = 2
+
+
+-----------------------------------------------------------
+Problem 10: sum is k
+-----------------------------------------------------------
+
+
+Given 2 arrays A1 and A2 of integers of sizes n1 and n2
+ respectievly and another integer k. Each arrray is sorted 
+in ascending order. 
+Write a program which computes total number of 
+pairs(lets say(x,Y)) such that x+y=k and x is from A1 
+and y is from A2. 
+(Note: we just need count of pairs)
+
+--------------------------------------
+Problem 11: index diff
+--------------------------------------
+Given an array A of size n. A contains integers
+in non-decreasing order.
+
+Output: count of all pairs x,y such that A[x]-A[y] < y-x
+
+
+----------------------------------------------
+Problem 12: Mirror
+----------------------------------------------
+
+Given an array of intgeres, A of size n. Elements are stored 
+in non-decreasing order.
+
+Output: Count of all x such that x and -x both are present in A.
+
+ 
+
+
+
+------------------------------------------------------------
+Problem 13:   Sum 0 neigbours
+------------------------------------------------------------
+  Given an array of integers A and size 'n'
+  Output: count of elements whose neigbours sum is 0.
+        Remember corner element (0 or n-1) has only
+        one neighbour.
+        for all other elements A[i], neigbours are A[i-1] and A[i+1]
+
+You have to write program without computing sum of A[i-1] and A[i+1]
+
+
+
+
+---------------------------------------------------
+Problem 14 : Count Segments
+---------------------------------------------------
+
+  Given an array of integers A and size n.
+
+  Output: Count of all segments
+
+  eg
+   a1 a1 a1 a1 a2 a2 a3 a3 a1 a1 a2 a2 
+   |---------| |---| |---| |---| |----|
+
+   output = 5
+
+
